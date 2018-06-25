@@ -57,12 +57,12 @@ public class TestHelp {
         };
 
         launcher.addInputResource(pathToFile);
-
+/*
         launcher.getEnvironment().setCommentEnabled(true);
         launcher.getEnvironment().setAutoImports(true);
 //        launcher.getEnvironment().useTabulations(true);
 //        launcher.getEnvironment().setTabulationSize(4);
-
+*/
         Class<?> processor = getProcessor(rulekey);
         Constructor<?> cons = processor.getConstructor(String.class);
         Object object = cons.newInstance(projectKey);
